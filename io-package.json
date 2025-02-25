@@ -1,0 +1,135 @@
+{
+	"common": {
+		"name": "ictb-time",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "IcTb Time",
+			"de": "IcTb Time",
+			"ru": "IcTb Time",
+			"pt": "IcTb Time",
+			"nl": "IcTb Time",
+			"fr": "IcTb Time",
+			"it": "IcTb Time",
+			"es": "IcTb Time",
+			"pl": "IcTb Time",
+			"uk": "IcTb Time",
+			"zh-cn": "IcTb Time"
+		},
+		"desc": {
+			"en": "ictb-time",
+			"de": "ictb-time",
+			"ru": "ictb-time",
+			"pt": "ictb-time",
+			"nl": "ictb-time",
+			"fr": "ictb-time",
+			"it": "ictb-time",
+			"es": "ictb-time",
+			"pl": "ictb-time",
+			"uk": "ictb-time",
+			"zh-cn": "ictb-time"
+		},
+		"authors": [
+			"zano-5702 <oliver@zanyi.ch>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "ictb-time.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/zano-5702/ioBroker.ictb-time/main/admin/ictb-time.png",
+		"readme": "https://github.com/zano-5702/ioBroker.ictb-time/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "date-and-time",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "materialize",
+			"tab": "materialize"
+		},
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "IcTb Time",
+				"de": "IcTb Time",
+				"ru": "IcTb Time",
+				"pt": "IcTb Time",
+				"nl": "IcTb Time",
+				"fr": "IcTb Time",
+				"it": "IcTb Time",
+				"es": "IcTb Time",
+				"pl": "IcTb Time",
+				"uk": "IcTb Time",
+				"zh-cn": "IcTb Time"
+			},
+			"link": "",
+			"fa-icon": "info"
+		},
+		"eraseOnUpload": true,
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": "7.0.23"
+			}
+		]
+	},
+	"native": {
+		"Kunde-Vorname": "",
+		"Kunde-Nachname": "",
+		"Kunde-Adresse": "",
+		"Kunde-ID": ""
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

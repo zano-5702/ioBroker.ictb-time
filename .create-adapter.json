@@ -1,0 +1,64 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "ictb-time",
+	"title": "IcTb Time",
+	"description": "",
+	"keywords": "",
+	"contributors": "",
+	"authorName": "zano-5702",
+	"authorGithub": "zano-5702",
+	"authorEmail": "oliver@zanyi.ch",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [
+		"tab"
+	],
+	"type": "date-and-time",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "Kunde-Vorname",
+			"label": "kunde-Vorname",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "Kunde-Nachname",
+			"label": "Kunde-Nachname",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "Kunde-Adresse",
+			"label": "Kunde-Adresse",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "Kunde-ID",
+			"label": "Traccar-ID",
+			"inputType": "text",
+			"defaultValue": ""
+		}
+	],
+	"language": "TypeScript",
+	"nodeVersion": "20",
+	"adminUi": "react",
+	"tabReact": "yes",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"tools": [
+		"ESLint"
+	],
+	"gitRemoteProtocol": "SSH",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"target": "github",
+	"creatorVersion": "2.6.5"
+}
